@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Sempervirens</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jura:wght@300..700&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+
+
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <div class="navBar">
+            <ul class="nav">
+                <li class="navL"><a href="index.html">Home</a></li>
+                <li class="navL"><a href="shop.html">Shop</a></li>
+                <li class="navL"><a href="favplants.html">Favorite Plants</a></li>
+                <li class="navL"><a href="About.html" class="active">About</a></li>
+                <li class="brand navL" style="float:right">Sempervirens</li>
+            </ul>
+        </div>
+    </header>
+    <!--Main Content-->
+    <div class="backgroundColor2">
+        <div class="particles">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <br>
+        <br>
+        <h2 style="font-family: Tangerine; text-align: center" ;>Our goal is to bring you plants you can never kill.
+        </h2>
+
+
+
+
+
+
+        <p class="infoText">
+            The view of the earth from the moon fascinated me - a small disk, 240,000 mniles away. It was hard to
+            think
+            that that little thing held so many problems, so many frustrations. Raging nationalistic interests,
+            famines,
+            wars, pestilence don't show from that distance. I'm convinced that some wayward stranger in a
+            space-craft,
+            coming from some other part of the heavens, could look at earth and never know that it was inhabited at
+            all.
+            But the samw wayward stranger would certainly know instinctively that if the earth were inhabited, then
+            the
+            destinies of all who lived on it must inevitably be interwoven and joined. We are one hunk of ground,
+            water,
+            air, clouds, floating around in space. From out there it really is 'one world'.</p>
+        <br>
+        <br>
+        <div class="grid-cont">
+
+            <div class="left">
+                <img src="tallplant.jpg" alt="A monstera plant on a white background"
+                    class="tallimg">
+            </div>
+            <div class="bktrns">
+                <div class="card">
+                    <h2> Live Plant Maintenence Requirements</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Plant Type</th>
+                        <th> Water Requirements</th>
+                        <th>Sunlight</th>
+                    </tr>
+                    <tr>
+                        <td>Succulent</td>
+                        <td>Minimal</td>
+                        <td>High, Direct</td>
+                    </tr>
+                    <tr>
+                        <td>SnakePlant</td>
+                        <td>Minimal</td>
+                        <td>Low</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="bktrns2">
+                <div class="card">
+                    <h2> Fake Plant Maintenence Requirements</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Plant Type</th>
+                        <th> Water Requirements</th>
+                        <th>Sunlight</th>
+                    </tr>
+                    <tr>
+                        <td>Succulent</td>
+                        <td>None</td>
+                        <td>Any Kind</td>
+                    </tr>
+                    <tr>
+                        <td>SnakePlant</td>
+                        <td>None</td>
+                        <td>Any Kind</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <br>
+        <p class="infoText">
+            The most significant things we can think about, when we think about Apollo, is that it has opened for
+            us,
+            for us being the World, a challenge of the future. The door is now cracked, but the promise of that
+            future
+            lies in the young people, not just in America, but the young people all over the world. Learning to live
+            and
+            learning to work together. In order to remind all the peoples of the World, in so many countries
+            throughout
+            the world, that this is what we all are striving for in the future, Jack has picked up a very
+            significant
+            rock, typical of what we have here in the valley of Taurus Littrow. It's a rock composed of many
+            fragments,
+            of many sizes, and many shapes, probably from all parts of the Moon, perhaps billions of years old. But
+            a
+            rock of all sizes and shapes, fragments of all sizes and shapes, and even colors that have grown
+            together to
+            become a cohesive rock outlasting the nature of Space, sort of living together in a very coherent, very
+            peaceful manner. When we return this rock or some of the others like it to Houston, we'd like to share a
+            piece of this rock with so many of the countries throughout the world. We hope that this will be a
+            symbol of
+            what our feelings are, what the feelings of the Apollo Program are, and a symbol of mankind that we can
+            live
+            in peace and harmony in the future.
+        </p>
+
+        <button onclick="document.location='shop.html'" class="centerBtn">Shop All</button>
+
+        <hr class="fade">
+
+        <form class="contactF" form name="contactUs" onsubmit="return validateForm()" method="post">
+            <h2> Contact Us</h2>
+            <label for="name">Name:</label><br>
+            <input type="text" class="contact" name="fname" id="name" placeholder="John"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" class="contact" id="email" name="femail" placeholder="johnb@awesomemail.com"><br><br>
+            <label for "message">Got something to say to us?</label> <br>
+            <textarea id="message" name="message" rows="10" cols="30">
+            </textarea> <br> <br>
+            <input type="checkbox" id="plantguide">
+            <label for="plantguide"> Yes, please send me a free copy of our plant guide <i>Listening to Plastic
+                    Plants</i>!</label><br> <br>
+            <input type="submit" class="subscribeBtn" value="Submit">
+
+        </form>
+
+
+
+
+
+
+
+        <footer>
+            <!-- When sized to mobile, put each card in a vertically stacked dropdown-->
+            <div class="fcenter">
+                <a href="#">
+                    <span class="material-icons" style="font-size: 24px;">keyboard_arrow_up</span><br>
+                    To the top</a>
+                <p>Powered by coffee</p>
+            </div>
+            <hr class="fade">
+            <break></break>
+            <div class="footerSquare">
+                <div class="aboutCard">
+                    <ul class="footerL">
+                        <li><a href="About.html"> About Our Products</a></li>
+                        <li> <a href="#"> Gift Options</a></li>
+                        <li><a href="#gallery"> Gallery</a></li>
+                        <li><a href="favplants.html"> Your Favorite Plants</a></li>
+                    </ul>
+                </div>
+                <div class="policyCard">
+                    <ul class="footerL">
+                        <li><a href="TOS.html"> TOS and Privacy</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Customer Service</a></li>
+                        <li><a href="#"> Shipping & Handling</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribeCard">
+                    <h3> Subscribe today for 10% off your first order</h3>
+                    <form class="emailBox">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br>
+                        <input type="Submit" class="subscribeBtn" value="Subscribe!" id="submitBtn" name="Submit">
+                    </form>
+                </div>
+                <div class="socialIcons">
+                    <p class="boldNote">Follow Us</p>
+                    <img src="fb.png" alt="Facebook logo" class="socialIcon">
+                    <img src="twitter.png" alt="twitter logo" class="socialIcon">
+                    <img src="insta.png" alt="instagram logo" class="socialIcon">
+                </div>
+
+                <div class="contactCard">
+                    <p><span class="material-icons">phone</span> (855)000-0000</p>
+                    <p><span class="material-icons">email</span> sempervirens_inc@awesomemail.com</p>
+                    <p><span class="material-icons">location_on</span>1000 WestNorth That Street <br>
+                        <!-- <p style="margin:-4; margin-top:-24px;"> -->AwesomeTown, NO, 67000</p>
+
+                </div>
+            </div>
+            <hr class="faint">
+            <div class="lowerFoot">
+                <h4>Copyright 2035 Sempervines</h4>
+            </div>
+
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

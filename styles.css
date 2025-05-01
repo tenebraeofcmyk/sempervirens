@@ -1,0 +1,772 @@
+/*Compound color scheme:
+#F8f7e7 - pale off white 
+#c8c279 -goldenrod 
+#7c5a71 - vivid lavender
+#A6c185 - light pale green - main
+#3c531d - dark green (footer)
+ #f0f1ee - background, grey tinge
+
+Fonts
+Gentium Plus - serifs
+quicksand - main
+Lexend - header
+Jura - buttons (futuristic machine text) - body default
+
+Use Camel Case */
+
+/* Navigation bar*/
+
+
+
+.backgroundColor {
+    background-color: #f0f1ee;
+}
+
+.header {
+    background-color: #dddddd;
+}
+
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    background-color: #dddddd;
+    min-height: 45px;
+    padding: 10px;
+}
+
+.navL {
+    float: left;
+    border-right: 1px solid #3c531d;
+}
+
+
+.navL a {
+    display: block;
+    color: #3c531d;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: "Jura";
+    font-weight: 800;
+}
+
+.navL a:hover:not(.active) {
+
+    color: #A6c185;
+    text-decoration: underline;
+    /* text-shadow: 2px 2px 9px #F8f7e7; */
+}
+
+a.active {
+    color: #3c531d;
+    text-decoration: underline;
+}
+
+.brand {
+    font-family: "Lexend";
+    font-size: 30px;
+    border-right: #f8f7e700;
+    margin-right: 20px;
+    color: #3c531d;
+    text-transform: uppercase;
+}
+
+
+body {
+    font-family: "Jura";
+}
+
+
+/*Home Page top banner*/
+
+
+.banner {
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.homeBanner {
+    position: relative;
+    margin-top: 5px;
+
+}
+
+.title {
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+    font-family: "Lexend";
+    color: #3c531d;
+    text-align: right;
+    font-size: 4em;
+    line-height: 1.2;
+}
+
+.ptitle {
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    font-size: 2em;
+    font-family: "Jura";
+}
+
+/* Gradient transparent - color - transparent */
+
+.fade {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*Featured Banner*/
+
+.featuredBanner {
+    max-height: 600px;
+}
+
+.smtitle {
+    text-align: center;
+    font-family: "Lexend";
+    font-size: 30px;
+    color: #3c531d;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box {
+    padding: 10px;
+    text-align: center;
+}
+
+.box:hover {
+    opacity: 96%;
+    border: 2px solid #A6c185;
+
+
+}
+
+
+.boximg {
+    max-height: 350px;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.infoText {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.faint {
+    height: 1px;
+    border-width: 0;
+    color: rgba(128, 128, 128, 0.514);
+    background-color: rgba(128, 128, 128, 0.445)
+}
+
+/*Seasonal Banner*/
+
+.seasonalBanner {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.tallimg {
+    max-height: 600px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+
+.seasonalInfo {
+    margin: auto;
+    text-align: center;
+}
+
+.title4 {
+    font-family: "Lexend";
+    color: #3c531d;
+    font-size: 4em;
+    line-height: 1.2;
+    margin: auto;
+}
+
+.shopBtn {
+    background-color: #A6c185;
+    color: #3c531d;
+    font-family: "Quicksand";
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 180px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.shopBtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #A6c185;
+    background-color: #3c531d;
+
+}
+
+/*Dried Plant Featured Banner*/
+
+.driedBanner {
+    padding: 10px;
+    /* background-color: #A6c185; */
+    background: #F0F1EE;
+    /* background: linear-gradient(nulldeg,rgba(240, 241, 238, 1) 0%, rgba(166, 193, 133, 1) 52%, rgba(240, 241, 238, 1) 100%); */
+    background: linear-gradient(180deg, rgba(240, 241, 238, 1) 0%, rgba(166, 193, 133, 1) 100%);
+}
+
+.centerHead {
+    text-align: center
+}
+
+.driedCards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.driedCards>div {
+    margin: 5px;
+}
+
+
+.card4 {
+    max-height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.plantCard:hover {
+    background-color: #f0f1ee3a;
+    cursor: pointer;
+    opacity: 96%;
+    border: 2px solid #A6c185;
+    box-sizing: border-box;
+    /* border: 1px solid #3c531d ; */
+    /* box-shadow: 5px 8px 10px #888888; */
+}
+
+.plantCard {
+    position: relative;
+}
+
+.h4card {
+    color: #3c531d;
+    text-align: center;
+}
+
+.p4card {
+    background-color: #3c531d;
+    color: #A6c185;
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #A6c185;
+    font-size: 20px;
+    box-sizing: border-box;
+    top: 25px;
+    left: 20px;
+}
+
+.centerBtn {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #3c531d;
+    color: #f0f1ee;
+    font-family: "Quicksand";
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 180px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.centerBtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #3c531d;
+    background-color: #f0f1ee;
+}
+
+/*Instagram Gallery*/
+
+.galleryBanner {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    color: #3c531d;
+    padding: 20px;
+}
+
+.gallerygrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.cardH:hover {
+    cursor: pointer;
+    opacity: 96%;
+    border: 2px solid #A6c185;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Summary Banner (Endofindex)*/
+
+.shopInfo {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    color: #3c531d;
+}
+
+
+/*shop.html page*/
+
+/* */
+.shopBanner {
+    max-height: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner2 {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.paleBox2 {
+    background-color: #dddddd5d;
+    position: absolute;
+    padding: 0px;
+    bottom: 0;
+    min-height: 100%;
+    left: 50%;
+}
+
+.note {
+    font-family: Quicksand;
+    font-size: 20px;
+    text-indent: 20px;
+    color: #3c531d;
+}
+
+.btnContainer {
+    padding: 20px;
+    margin: auto;
+
+}
+
+.sortbtn {
+    font-family: "Jura";
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.sortbtn:hover {
+    cursor: pointer;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+/*shoppt2 page*/
+
+/*   */
+
+.lowerNav {
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Jura;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul.nav2 {
+    list-style-type: none;
+    min-height: 45px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.navL2 {
+    display: inline;
+    /* border-right: 1px solid #3c531d; */
+    color: #3c531d;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navL2 a {
+    text-decoration: none;
+}
+
+.navL2 a:hover {
+    cursor: pointer;
+    color: #A6c185;
+    text-decoration: underline;
+    /* text-shadow: 2px 2px 9px #F8f7e7; */
+}
+
+
+
+.rel {
+    position: relative;
+    width: 100%;
+}
+
+.paleBox {
+    background-color: #dddddd5d;
+    position: absolute;
+    min-width: 500px;
+    max-height: fit-content;
+    padding: 0px;
+    margin: 0px;
+    bottom: 30%;
+    left: 60%;
+}
+
+.paleT {
+    font-family: "Gentium Plus";
+    color: rgb(8, 8, 8);
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 20px;
+    /* padding-top:180px; */
+
+}
+
+.paleP {
+    color: rgb(8, 8, 8);
+    padding: 10px;
+    margin: auto;
+    font-size: 2em;
+    font-family: "Jura";
+    text-indent: 30px;
+}
+
+
+
+
+.shopContainerg3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 10px;
+}
+
+.sidenav {
+    /* grid-row-start: 1;
+    grid-row-end: 5; */
+    /* grid-row: 1/ span 4; */
+    grid-area: 1 / 1 / span 4 / span 1;
+    font-size: 20px;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+.sideL {
+    list-style-type: none;
+    color: #3c531d;
+    position: sticky;
+    top: 0;
+}
+
+.boximg2 {
+    max-height: 250px;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+
+
+.btnL:hover {
+    text-decoration: underline;
+    color: #A6c185;
+    cursor: pointer;
+}
+
+.btnL {
+    color: #3c531d
+}
+
+.cartBtn {
+    color: #3c531d;
+    max-width: 150px;
+    min-width: 200px;
+    background-color: #A6c185;
+    padding: 10px;
+    font-weight: 600;
+    border: 1px solid #3c531d;
+}
+
+.cartBtn:hover {
+    cursor: pointer;
+    background-color: #3c531d;
+    color: #A6c185;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*About Page */
+
+
+.backgroundColor2 {
+    background: #F0F1EE;
+    background: linear-gradient(180deg, rgba(240, 241, 238, 1) 0%, rgba(60, 83, 29, 1) 100%);
+}
+
+/* Animated background particles */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/*Table*/
+
+.grid-cont {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+.grid-cont>div {
+    padding: 10px;
+}
+
+.left {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+.bktrns {
+    border-radius: 10px;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 8px;
+}
+.tallimg {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+table>th,td {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+
+/*Contact Forms */
+
+.contactF {
+    padding: 20px;
+    margin: auto;
+}
+
+textarea {
+    width: 60%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #A6c185;
+    border-radius: 4px;
+    background-color: #f0f1ee;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.contact {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.contact:focus {
+    border: 3px solid #3c531d;
+}
+
+/* input[type="text"] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus {
+    border: 3px solid #3c531d;
+    /* background-color: #93b48b; */
+
+
+
+.poll {
+    width: 15%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 9px;
+}
+
+
+/*
+#F8f7e7 - pale off white 
+#c8c279 -goldenrod 
+#7c5a71 - vivid lavender
+#A6c185 - light pale green - main
+#3c531d - dark green (footer)
+ #f0f1ee - background, grey tinge
+
+Fonts
+Gentium Plus - serifs
+quicksand - main
+Lexend - header
+Jura - buttons (futuristic machine text) - body default*/
+
+
+/*footer*/
+
+footer {
+    background-color: #dddddd;
+    color: #3c531d;
+    /* color:#c8c279 ; */
+    padding: 20px;
+    margin-top: 10px;
+    max-height: 600px;
+    width: 100%;
+}
+
+.fcenter {
+    padding: 10px;
+    text-align: center;
+}
+
+.footerSquare {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    margin: auto;
+}
+
+.aboutCard {
+    padding: px;
+    line-height: 1.5;
+}
+
+.infoTextsm {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.shopInfo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.policyCard {
+    line-height: 1.5;
+}
+
+.footerL {
+    list-style-type: none;
+}
+
+.subscribeCard {
+    text-align: center;
+    grid-column: 3 /span 2;
+    padding: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.subscribeBtn {
+    background-color: #A6c185;
+    color: #3c531d;
+    font-family: "Quicksand";
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 150px;
+    padding: 6px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.subscribeBtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #A6c185;
+    background-color: #3c531d;
+}
+
+.contactCard {
+    text-align: left;
+}
+
+/* div.contactCard p:last-child {
+    text-align-last:left;
+} */
+
+
+.material-icons {
+    padding: 4px;
+    vertical-align: sub;
+}
+
+.lowerFoot {
+    text-align: center;
+}
+
+.socialIcon {
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sempervirens</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jura:wght@300..700&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+
+
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <div class="navBar">
+            <ul class="nav">
+                <li class="navL"><a href="index.html">Home</a></li>
+                <li class="navL"><a href="shop.html">Shop</a></li>
+                <li class="navL"><a class="active" href="#">Favorite Plants</a></li>
+                <li class="navL"><a href="About.html">About</a></li>
+                <li class="brand navL" style="float:right">Sempervirens</li>
+            </ul>
+        </div>
+    </header>
+    <!--Main Content-->
+
+
+
+    <div class="backgroundColor">
+
+        <div class="homeBanner">
+            <img src="8ioenvmof-.jpg" alt="hz arching plant" class="banner">
+            <h1 class="title">Everyday Artificial Plants</h1>
+            <h4 class="ptitle"> Care-free Greenery and
+                Effortless Foliage</h4>
+        </div>
+        <br>
+
+        <div class="featuredBanner">
+            <h2 class="smtitle">Plants that fill our homes</h2>
+            <h2 style="text-align: center;">The 2024 Plants selected by our Users</h2>
+            <br>
+            <div class="driedCards">
+                <div class="box">
+                    <img src="Img/berke-can-ot4BBWX2mBc-unsplash.jpg" class="boximg" alt="plant growing up a wall">
+                    <h3>This fancy green plant name</h3>
+                    <p>Loved for its dark green leaves, resiliant nature, and reaching vines</p>
+                </div>
+                <div class="box">
+                    <img src="Img/brandon-cormier-mModpE0TpOM-unsplash.jpg" class="boximg"
+                        alt="Plant inside with leaves">
+                    <h3>Such a pretty Plant</h3>
+                    <p>Grown for the way it brings life to dark corners</p>
+                </div>
+                <div class="box">
+                    <img src="Img/elly-belly-fncJKuAhqXc-unsplash.jpg" class="boximg"
+                        alt="A green plant used for decoration">
+                    <h3>The Plant Name is Lost</h3>
+                    <p>Used to add striking decor to any household design</p>
+                </div>
+                <div class="box">
+                    <img src="Img/jennifer-burk-W1UBIDkLiJw-unsplash.jpg" class="boximg" alt="Faux succulents in a pot">
+                    <h3>Fancy Succulent Arrangement</h3>
+                    <p>A long-term favorite, these mini succulents bring a touch of whimsy</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="fade">
+
+        <form class="pollF" form name="contactUs" onsubmit="return validateForm()" method="post"
+            style="text-align: center;">
+            <h2 class="smtitle"> Vote For Your Favorites</h2>
+            <label for="name">Name:</label><br>
+            <input type="text" class="poll" name="fname" id="name" placeholder="John"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" class="poll" id="email" name="femail" placeholder="johnb@awesomemail.com"><br><br>
+
+            <input type="radio" id="snakeplant" name="fav_plant" value="snakeplant">
+            <label for="snakeplant" style="font-size:25px">The Household Snakeplant</label>
+            <br>
+
+            <input type="radio" id="zz" name="fav_plant" value="ZZPlant">
+            <label for="zz" style="font-size:25px">Eternal-green ZZ Plant</label>
+            <br>
+
+            <input type="radio" id="ficus" name="fav_plant" value="Ficus">
+            <label for="ficus" style="font-size:25px">The Classic Ficus</label>
+
+            <br> <br>
+
+            <input type="submit" class="subscribeBtn" value="Submit">
+
+        </form>
+
+
+
+
+
+
+        <footer>
+            <!-- When sized to mobile, put each card in a vertically stacked dropdown-->
+            <div class="fcenter">
+                <a href="#">
+                    <span class="material-icons" style="font-size: 24px;">keyboard_arrow_up</span><br>
+                    To the top</a>
+                <p>Powered by coffee</p>
+            </div>
+            <hr class="fade">
+            <break></break>
+            <div class="footerSquare">
+                <div class="aboutCard">
+                    <ul class="footerL">
+                        <li><a href="About.html"> About Our Products</a></li>
+                        <li> <a href="#"> Gift Options</a></li>
+                        <li><a href="index.html"> Gallery</a></li>
+                        <li><a href="favplants.html"> Your Favorite Plants</a></li>
+                    </ul>
+                </div>
+                <div class="policyCard">
+                    <ul class="footerL">
+                        <li><a href="TOS.html"> TOS and Privacy</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Customer Service</a></li>
+                        <li><a href="#"> Shipping & Handling</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribeCard">
+                    <h3> Subscribe today for 10% off your first order</h3>
+                    <form class="emailBox">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br>
+                        <input type="Submit" class="subscribeBtn" value="Subscribe!" id="submitBtn" name="Submit">
+                    </form>
+                </div>
+                <div class="socialIcons">
+                    <p class="boldNote">Follow Us</p>
+                    <img src="fb.png" alt="Facebook logo" class="socialIcon">
+                    <img src="twitter.png" alt="twitter logo" class="socialIcon">
+                    <img src="insta.png" alt="instagram logo" class="socialIcon">
+                </div>
+
+                <div class="contactCard">
+                    <p><span class="material-icons">phone</span> (855)000-0000</p>
+                    <p><span class="material-icons">email</span> sempervirens_inc@awesomemail.com</p>
+                    <p><span class="material-icons">location_on</span>1000 WestNorth That Street <br>
+                        <!-- <p style="margin:-4; margin-top:-24px;"> -->AwesomeTown, NO, 67000</p>
+
+                </div>
+            </div>
+            <hr class="faint">
+            <div class="lowerFoot">
+                <h4>Copyright 2035 Sempervines</h4>
+            </div>
+
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

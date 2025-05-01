@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sempervirens</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jura:wght@300..700&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+
+
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <div class="navBar">
+            <ul class="nav">
+                <li class="navL"><a href="index.html">Home</a></li>
+                <li class="navL"><a href="#" class="active">Shop</a></li>
+                <li class="navL"><a href="favplants.html">Favorite Plants</a></li>
+                <li class="navL"><a href="About.html">About</a></li>
+                <li class="brand navL" style="float:right">Sempervirens</li>
+            </ul>
+        </div>
+        <div class="lowerNav">
+            <ul class="nav2">
+                <li class="navL2"><a href="shop.html#newplants">New</a> </li>
+                <li class="navL2"> <a href="shop.html#fakeflowers">Fake Flowers</a></li>
+                <li class="navL2"> <a href="shop.html#fakeflowers">Artificial Plants</a> </li>
+                <li class="navL2"><a href="shoppt2.html#driedplants">Dried Foliage </a></li>
+                <li class="navL2"> <a href="shop.html#seasonalplants">Seasonal</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <!--Main Content-->
+
+    <!--Dropdown filter bar attached to Nav, leads to parts of page, needs to be sticky-->
+
+
+    <div class="backgroundColor">
+
+        <!--Start Dried Plant Collection NOT NEW-->
+
+        <div class="featuredBanner rel" id="driedplants">
+            <img src="driedplantscatter.jpg" alt="Dried plant pieces scattered on a table" class="banner">
+            <div class="paleBox">
+                <h1 class="paleT">Eternal Gardens </h1>
+                <h3 class="paleP">Dried and treated plants
+                    <br>for vibrant life without water
+                </h3>
+            </div>
+        </div>
+
+        <!--Side navbar -->
+        <!--Shop Container, grid of 3x4 to fit navbar in side-->
+        <p class="infoText"> Transform your home and office into a idyllic forest with long-lasting floral designs.
+        </p>
+        <div class="container4">
+
+            <div class="sidenav">
+                <ul class="sideL">
+                    <li class="btnL" onclick="filterBy('dried')">Dried & Treated </li>
+                    <ul class="sideL">
+                        <li class="btnL" onclick="filterByCategories(['dried', 'plants'])"> Plants</li>
+                        <li class="btnL" onclick="filterByCategories(['dried', 'flowers'])">Flowers</li>
+                    </ul>
+                    <li class="btnL" onclick="filterBy('silk')">Silk</li>
+                    <ul class="sideL">
+                        <li class="btnL" onclick="filterByCategories(['silk', 'plants'])"> Plants</li>
+                        <li class="btnL" onclick="filterByCategories(['silk', 'flowers'])"> Flowers</li>
+                    </ul>
+                    <li class="btnL" onclick="showAll()">Show All</li>
+                </ul>
+            </div>
+            <div class="box filterDiv dried plant">
+                <img src="spiky.jpg" alt="plantzzz" class="boximg">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv silk">
+                <img src="tallleaves.jpg" alt="plantzzz" class="boximg">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv silk">
+                <img src="tallplant.jpg" alt="plantzzz" class="boximg">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv silk plant">
+                <img src="jennifer-burk-W1UBIDkLiJw-unsplash.jpg" alt="plantzzz" class="boximg">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv dried flower">
+                <img src="fern2.jpg" alt="plantzzz" class="boximg">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv dried plant">
+                <img src="Img/annie-spratt-_SS6kzn3TNM-unsplash.jpg" alt="plantzzz" class="boximg2">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv silk plant">
+                <img src="img/angele-kamp-sgrAwSwa3H4-unsplash.jpg" alt="plantzzz" class="boximg2">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv silk flower">
+                <img src="Img/aedrian-salazar-wtA24P3JEf8-unsplash.jpg" alt="plantzzz" class="boximg2">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv silk plant">
+                <img src="Img/hz-insidewall.jpg" alt="plantzzz" class="boximg2">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv dried plant">
+                <img src="Img/katsia-jazwinska-jJi31q3OKog-unsplash.jpg" alt="plantzzz" class="boximg2">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+            <div class="box filterDiv dried flower">
+                <img src="Img/europeana-3VbN9w72H5w-unsplash.jpg" alt="plantzzz" class="boximg2">
+                <h3> A PLANT</h3>
+                <p> Some plant info text</p>
+                <button class="cartBtn"> Add to Cart</button>
+            </div>
+
+        </div>
+        <br>
+
+        <br>
+        <hr class="fade">
+        <br>
+
+
+
+
+        <!--(End) Summary Content-->
+        <div class="shopInfo">
+            <h2 class="smtitle">Shop Sempervirens for a vast collection of quality fake plants, <br> artificial flowers,
+                and dried plants.</h2>
+            <p class="infoTextsm"> Looking for a way to brighten your home with greenery and floral beauty? <br>
+                Decorate with our collection of artificial plants for a stunning look without the commitment of watering
+                or sunlight.</p>
+        </div>
+
+
+        <footer>
+            <!-- When sized to mobile, put each card in a vertically stacked dropdown-->
+            <div class="fcenter">
+                <a href="#">
+                    <span class="material-icons" style="font-size: 24px;">keyboard_arrow_up</span><br>
+                    To the top</a>
+                <p>Powered by coffee</p>
+            </div>
+            <hr class="fade">
+            <break></break>
+            <div class="footerSquare">
+                <div class="aboutCard">
+                    <ul class="footerL">
+                        <li><a href="About.html"> About Our Products</a></li>
+                        <li> <a href="#"> Gift Options</a></li>
+                        <li><a href="#gallery"> Gallery</a></li>
+                        <li><a href="favplants.html"> Your Favorite Plants</a></li>
+                    </ul>
+                </div>
+                <div class="policyCard">
+                    <ul class="footerL">
+                        <li><a href="TOS.html"> TOS and Privacy</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Customer Service</a></li>
+                        <li><a href="#"> Shipping & Handling</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribeCard">
+                    <h3> Subscribe today for 10% off your first order</h3>
+                    <form class="emailBox">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br>
+                        <input type="Submit" class="subscribeBtn" value="Subscribe!" id="submitBtn" name="Submit">
+                    </form>
+                </div>
+                <div class="socialIcons">
+                    <p class="boldNote">Follow Us</p>
+                    <img src="fb.png" alt="Facebook logo" class="socialIcon">
+                    <img src="twitter.png" alt="twitter logo" class="socialIcon">
+                    <img src="insta.png" alt="instagram logo" class="socialIcon">
+                </div>
+
+                <div class="contactCard">
+                    <p><span class="material-icons">phone</span> (855)000-0000</p>
+                    <p><span class="material-icons">email</span> sempervirens_inc@awesomemail.com</p>
+                    <p><span class="material-icons">location_on</span>1000 WestNorth That Street <br>
+                        <!-- <p style="margin:-4; margin-top:-24px;"> -->AwesomeTown, NO, 67000</p>
+
+                </div>
+            </div>
+            <hr class="faint">
+            <div class="lowerFoot">
+                <h4>Copyright 2035 Sempervines</h4>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

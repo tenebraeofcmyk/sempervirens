@@ -1,0 +1,234 @@
+/* Media Sizing*/
+
+/* SIZING */
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (min-width: 600px) {
+    .container4 {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sidenav {
+        grid-row-start: 1;
+        /* grid-area: 1 / 1/ span 1/ span 1; */
+        font-size: 15px;
+        max-width: fit-content;
+    }
+
+    .boximg,
+    .boximg2,
+    .shopBanner {
+        display: none;
+    }
+
+    .box {
+        max-width: fit-content;
+    }
+
+    .footerSquare {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        margin: auto;
+
+    }
+
+    .subscribeCard {
+        margin: auto;
+        padding: 10px;
+    }
+
+    .subscribeCard {
+        display: none;
+    }
+
+    /* .brand,
+    .infoText {
+        
+
+    } */
+
+    .banner,
+    .tallimg,
+    .driedBanner,
+    .boximg {
+        display: block;
+    }
+
+    .title,
+    .paleT {
+        
+        text-align: center;
+        margin: auto;
+    }
+
+    .ptitle,
+    .paleP {
+       
+        text-align: center;
+        margin: auto;
+    }
+
+    .paleBox,
+    .paleBox2 {
+        /* position: static; */
+        margin: auto;
+        padding: 10px;
+        font-size: small;
+        left: 50%;
+
+    }
+
+    .galleryBanner {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        color: #3c531d;
+        padding: 10px;
+    }
+
+    .gallerygrid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .card4 {
+        position: static;
+        padding: 10px;
+
+    }
+}
+
+/* 600 and up*/
+@media only screen and (max-width: 600px) {
+
+    .paleBox,
+    .paleBox2 {
+        position: absolute;
+        margin: auto;
+        bottom: 30%;
+        left: 0;
+        font-size: x-small;
+    }
+}
+
+.banner,
+.tallimg,
+.driedBanner {
+    display: block;
+}
+
+/*.boximg,
+.boximg2,
+.shopBanner {
+     max-height:100px;
+    min-width:80%;
+    object-fit: cover; */
+
+
+/* .boximg {
+
+    display: none;
+} */
+
+/*
+    .box {
+        max-width: fit-content;
+    }*/
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+
+/*768 and down*/
+@media only screen and (min-width: 768px) {
+}
+
+
+
+    /*900 and up*/
+    @media only screen and (min-width: 900px) {
+
+        .paleBox,
+        .paleBox2 {
+            /* position: static; Why did I put this here? */
+            margin: auto;
+            padding: 10px;
+            font-size: small;
+        }
+    }
+
+
+    /*900 and down*/
+    @media only screen and (max-width: 900px) {
+        .container4 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .sidenav {
+            grid-row-start: 1;
+
+            font-size: 15px;
+            max-width: fit-content;
+        }
+
+        .box {
+            max-width: fit-content;
+        }
+
+        .boximg {
+            max-height: 100px;
+            min-width: 80%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .subscribeCard {
+            display: none;
+        }
+    }
+
+
+
+    /* Extra large devices (large laptops and desktops, 1200px and up)*/
+
+    @media only screen and (min-width: 1200px) {
+        .container4 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .sidenav {
+            grid-area: 1 / 1 / span 4 / span 1;
+            font-size: 20px;
+            margin: 10px;
+            line-height: 1.5;
+        }
+
+        .boximg {
+            max-height: 350px;
+            min-width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .subscribeCard {
+            display: block;
+        }
+
+        .paleBox,
+        .paleBox2 {
+            position: absolute;
+            margin: auto;
+            padding: 10px;
+            font-size: small;
+            left: 50%;
+            bottom: 30%;
+        }
+    }
