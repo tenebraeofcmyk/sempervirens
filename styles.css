@@ -618,6 +618,7 @@ table>th,td {
 .contactF {
     padding: 20px;
     margin: auto;
+    font-style: bold;
 }
 
 textarea {
@@ -649,6 +650,11 @@ textarea {
     margin: 8px 0;
     border-radius: 9px;
 }
+.books {
+   font-family: "Quicksand";
+   font-style: 600px;
+
+  }
 
 
 /*

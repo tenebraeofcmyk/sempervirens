@@ -65,8 +65,7 @@
         <div class="grid-cont">
 
             <div class="left">
-                <img src="Img/tallplant.jpg" alt="A monstera plant on a white background"
-                    class="tallimg">
+                <img src="Img/tallplant.jpg" alt="A monstera plant on a white background" class="tallimg">
             </div>
             <div class="bktrns">
                 <div class="card">
@@ -152,14 +151,27 @@
             <h2> Contact Us</h2>
             <label for="name">Name:</label><br>
             <input type="text" class="contact" name="fname" id="name" placeholder="John"><br>
+
             <label for="email">Email:</label><br>
             <input type="text" class="contact" id="email" name="femail" placeholder="johnb@awesomemail.com"><br><br>
-            <label for "message">Got something to say to us?</label> <br>
+
+            <label for="message">Got something to say to us?</label> <br>
             <textarea id="message" name="message" rows="10" cols="30">
-            </textarea> <br> <br>
-            <input type="checkbox" id="plantguide">
-            <label for="plantguide"> Yes, please send me a free copy of our plant guide <i>Listening to Plastic
-                    Plants</i>!</label><br> <br>
+            </textarea>
+             <br> <br>
+
+            <input type="checkbox" id="emailsend">
+            <label for="emailsend"> Don't send me junk mail!</i></label><br> <br>
+
+            <label for="books" class="books">Yes, Please send me a Fake Plant Guide Book!</label>
+            <br>
+
+            <select id="books" name="books" class="contact books">
+                <option value="My Plants Keep Dying" class="books">My Plants Keep Dying</option>
+                <option value="A Hundred Plastic Petals" class="books">A Hundred Plastic Petals</option>
+                <option value="Listening to Plastic Plants" class="books">Listening to Plastic Plants</option>
+            </select>
+            <br>
             <input type="submit" class="subscribeBtn" value="Submit">
 
         </form>
