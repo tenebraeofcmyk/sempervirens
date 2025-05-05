@@ -228,14 +228,12 @@ body {
 
 .driedBanner {
     padding: 10px;
-    /* background-color: #A6c185; */
     background: #F0F1EE;
-    /* background: linear-gradient(nulldeg,rgba(240, 241, 238, 1) 0%, rgba(166, 193, 133, 1) 52%, rgba(240, 241, 238, 1) 100%); */
     background: linear-gradient(180deg, rgba(240, 241, 238, 1) 0%, rgba(166, 193, 133, 1) 100%);
 }
 
 .centerHead {
-    text-align: center
+    text-align: center;
 }
 
 .driedCards {
@@ -336,7 +334,7 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*Summary Banner (Endofindex)*/
+/*Summary Banner (Endofindex.html)*/
 
 .shopInfo {
     margin-left: 100px;
@@ -348,7 +346,7 @@ body {
 
 /*shop.html page*/
 
-/* */
+
 .shopBanner {
     max-height: 300px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -405,7 +403,6 @@ body {
 
 /*shoppt2 page*/
 
-/*   */
 
 .lowerNav {
     background-color: #dddddd;
@@ -550,6 +547,15 @@ ul.nav2 {
 }
 
 
+
+/*favplants.html*/
+/*list*/
+
+.listnum {
+    margin:auto;
+    width:300px;
+}
+
 /*About Page */
 
 
@@ -636,19 +642,6 @@ textarea {
 .contact:focus {
     border: 3px solid #3c531d;
 }
-
-/* input[type="text"] {
-    width: 40%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border-radius: 8px;
-}
-
-input[type="text"]:focus {
-    border: 3px solid #3c531d;
-    /* background-color: #93b48b; */
-
-
 
 .poll {
     width: 15%;
@@ -751,11 +744,6 @@ footer {
 .contactCard {
     text-align: left;
 }
-
-/* div.contactCard p:last-child {
-    text-align-last:left;
-} */
-
 
 .material-icons {
     padding: 4px;

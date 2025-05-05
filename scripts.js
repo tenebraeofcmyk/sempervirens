@@ -67,7 +67,7 @@ function validateForm() {
 
 
 
-//Shop2.html sorting function
+//Shop2.html & shop.html sorting function
 
 //Start with all on page upon load
 function filterPlants() {
